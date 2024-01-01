@@ -43,4 +43,4 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_ACCESS_KEY }}
         if: steps.is_tag_beta.outputs.is_beta == 'false'
-        run: npm adduser && npm publish
+        run: npm publish
